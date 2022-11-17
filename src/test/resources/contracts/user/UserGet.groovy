@@ -16,9 +16,7 @@ Contract.make {
     }
     response {
         status OK()
-        body("""
-         Hello
-       """)
+        body("Hello")
         headers {
             contentType(MediaType.APPLICATION_JSON_VALUE)
         }

@@ -12,23 +12,7 @@ public class UsersService {
     UsersRepository repository;
 
     public Users saveUser(Users users){
-        Users u = new Users();
-        u.setPassword(md5Convert(users));
         return repository.save(users);
-    }
-
-    private String md5Convert(Users users){
-        return userCategory(users);
-    }
-
-    private String userCategory(Users users){
-        String result = "";
-        if (users.getUsername().equalsIgnoreCase("PREMIUM")){
-             result = "12345";
-        } else if (users.getUsername().equalsIgnoreCase("REGULAR")){
-             result = "abcde";
-        }
-        return result;
     }
 
 }
