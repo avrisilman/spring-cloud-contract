@@ -11,6 +11,7 @@
 	<groupId>com.service.users</groupId>
 	<artifactId>users-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>users-service</name>
 	<description>User project for Spring Boot</description>
 	<properties>
