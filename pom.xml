@@ -16,10 +16,10 @@
 	<description>User project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
-		<sonar.coverage.exclusions>
+		<!--<sonar.coverage.exclusions>
 			**/*com/service/users/entity/*,
 			**/*com/service/users/UsersServiceApplication*.java,
-		</sonar.coverage.exclusions>
+		</sonar.coverage.exclusions>-->
 	</properties>
 	<dependencies>
 		<dependency>
