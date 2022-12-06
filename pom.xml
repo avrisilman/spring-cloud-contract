@@ -16,6 +16,10 @@
 	<description>User project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<sonar.coverage.exclusions>
+			**/*com/service/users/entity/*,
+			**/*com/service/users/UsersServiceApplication*.java,
+		</sonar.coverage.exclusions>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -117,7 +121,7 @@
 				<configuration>
 					<excludes>
 						<exclude>com/service/users/entity/*.class</exclude>
-						<!--<exclude>com/service/users/UsersServiceApplication.class</exclude>-->
+						<exclude>com/service/users/UsersServiceApplication.class</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
